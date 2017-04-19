@@ -1,11 +1,11 @@
 $(document).ready(function(){
     
     $('#filters').on('click', '.on-sale', function() {
-    $('.tour').filter('.on-sale').addClass('highlight-sale');
+    $('.tour').filter('.on-sale').toggleClass('highlight-sale');
   });
 
   $('#filters').on('click', '.featured', function() {
-    $('.tour').filter('.featured').addClass('highlight-featured');
+    $('.tour').filter('.featured').toggleClass('highlight-featured');
       
   });
     
