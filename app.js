@@ -1,7 +1,7 @@
 $(document).ready(function(){
     
     $('#filters').on('click', '.on-sale', function() {
-    $('.tour').filter('.on-sale').toggleClass('highlight-sale');
+    $('[data-category='featured']').toggleClass('highlight-sale');
   });
 
   $('#filters').on('click', '.featured', function() {
