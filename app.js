@@ -1,11 +1,11 @@
 $(document).ready(function(){
     
     $('#filters').on('click', '.on-sale', function() {
-    $('[data-category='sale']').toggleClass('highlight-sale');
+    $('[data-sale]').toggleClass('highlight-sale');
   });
 
   $('#filters').on('click', '.featured', function() {
-     $('[data-category='featured']').toggleClass('highlight-featured');
+     $('[data-featured]').toggleClass('highlight-featured');
       
   });
     
