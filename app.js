@@ -1,6 +1,6 @@
 $(document).ready(function(){
     
-    $('#filters').on('click', '.on-sale', function() {
+    $('#filters').on('click', '.on-sale', function(event) {      
         $('[data-category = "on-sale"]').toggleClass('highlight-sale');
     });
 
@@ -11,12 +11,11 @@ $(document).ready(function(){
     
 
     $('button').on('click', function() {
-        var discount = $(this).closest('.tour').data('discount');
+        var discount =$(this).parent('[data-category]').data('discount');
         var message = $('<div id="message">Call 111-222-333 for a $' + discount + ' discount</div>');
        
-        $(this).closest('.tour').append(message);
-        $(this).closest('.book').remove();
-      
+         $(this).parent('[data-category]').append(message);
+         $(this).closest('.book').remove();
     });  
     
 });
