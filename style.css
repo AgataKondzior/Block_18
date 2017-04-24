@@ -41,19 +41,15 @@ h1 {
     cursor: pointer;
 }
 
-#filters li .on-sale {
+.on-sale {
   background-color:#ffb399;  
 }
 
-#filters li .featured {
+.featured {
   background-color:lightyellow;  
 }
 
-.usa.tour.on-sale {
-    
-    
-    
-}
+
 .tour {
     width: 350px;
     height:200px;
