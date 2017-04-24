@@ -1,7 +1,7 @@
 $(document).ready(function(){
     
     $('#filters').on('click', '.on-sale', function(event) {      
-        $('[data-category = "on-sale"]').toggleClass('sale');
+        $('[data-category = "on-sale"]').toggleClass('on-sale');
     });
 
     $('#filters').on('click', '.featured', function() {
