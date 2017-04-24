@@ -5,7 +5,7 @@ $(document).ready(function(){
     });
 
     $('#filters').on('click', '.featured', function() {
-        $('[data-category= "featured"]').toggleClass('highlight-featured');
+        $('[data-category= "featured"]').toggleClass('featured');
       
     });
     
